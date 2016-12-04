@@ -117,7 +117,7 @@ set(SOURCE_FILES
     Sources/Tasks/Task01.h
     Sources/Tasks/Task04.h
     Sources/Tasks/Task05_01.h
-    Sources/main.cpp Sources/Tasks/Task02.h Sources/GraphicsEngine/Materials/MaterialSphere.h Sources/GraphicsEngine/Materials/MaterialSphere.cpp Sources/GraphicsEngine/Materials/MaterialCylinder.h Sources/GraphicsEngine/Materials/MaterialCylinder.cpp Sources/GraphicsEngine/Materials/MaterialSpecular.h Sources/GraphicsEngine/Materials/MaterialSpecular.cpp)
+    Sources/main.cpp Sources/Tasks/Task02.h Sources/GraphicsEngine/Materials/MaterialSphere.h Sources/GraphicsEngine/Materials/MaterialSphere.cpp Sources/GraphicsEngine/Materials/MaterialCylinder.h Sources/GraphicsEngine/Materials/MaterialCylinder.cpp Sources/GraphicsEngine/Materials/MaterialSpecular.h Sources/GraphicsEngine/Materials/MaterialSpecular.cpp Sources/Tasks/Task05_02.h Sources/GraphicsEngine/Materials/MaterialRoad.cpp Sources/GraphicsEngine/Materials/MaterialRoad.h Sources/Tasks/Task05_03.h Sources/GraphicsEngine/Materials/MaterialEarth.cpp Sources/GraphicsEngine/Materials/MaterialEarth.h)
 
 find_package( OpenGL REQUIRED)
 find_package(GLUT REQUIRED)
