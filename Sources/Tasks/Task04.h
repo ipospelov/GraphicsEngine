@@ -79,7 +79,7 @@ public:
         {
             Light * pLight = new Light(LightType::LIGHT_SPOT);
             pLight->SetColor(1,0,1);
-            pLight->SetIntensity(1);
+            pLight->SetIntensity(2);
 
             Object * pLightObject = new Object();
             pLightObject->m_pTransform	= new Transform(1,1,-2, 0,0,0, 1,1,1);

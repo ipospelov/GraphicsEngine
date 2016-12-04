@@ -51,14 +51,30 @@ void GL20Texture2D::SetFilterMode(TextureFilterMode filterMode)
 	else if (filterMode == TEXTURE_FILTER_MODE_BILINEAR)
 	{
 		// TODO: Task05
+		//glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
+		//glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,m_magFilterMode);
+		m_minFilterMode = GL_LINEAR;
+		m_magFilterMode = GL_LINEAR;
+		m_useAniso = false;
 	}
 	else if (filterMode == TEXTURE_FILTER_MODE_TRILINEAR)
 	{
 		// TODO: Task05
+		m_minFilterMode = GL_LINEAR_MIPMAP_LINEAR;
+		m_magFilterMode = GL_LINEAR;
+		m_useAniso = false;
 	}
 	else if (filterMode == TEXTURE_FILTER_MODE_ANISOTROPIC)
 	{
 		// TODO: Task05
+/*		GLint g_nMaxAnisotropy;
+		glGetIntegerv(GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT, &g_nMaxAnisotropy);
+		glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAX_ANISOTROPY_EXT,g_nMaxAnisotropy - 0.1);*/
+		m_minFilterMode = GL_LINEAR_MIPMAP_LINEAR;
+		m_magFilterMode = GL_LINEAR;
+/*		gluBuild2DMipmaps(GL_TEXTURE_2D,3,nHeight,nWidth,
+						  GL_RGB,GL_UNSIGNED_BYTE,pImage);*/
+		m_useAniso = true;
 	}
 }
 
@@ -72,4 +88,9 @@ void GL20Texture2D::SetTexture(int textureRegister) const
 	
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, m_minFilterMode);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, m_magFilterMode);
+	if(m_useAniso){
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, 3);
+	} else{
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, 0);
+	}
 }

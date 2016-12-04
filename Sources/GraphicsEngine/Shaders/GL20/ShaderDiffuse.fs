@@ -35,7 +35,7 @@ vec3 calcSpecular(vec3 fragmentToCamera, vec3 lightDir, vec3 normal, vec3 lightC
     float materialSpecularFactor = 50.0;
     vec3 lightReflect = normalize(reflect(lightDir, normal));
 
-	float SpecularFactor = pow(max(0.0, dot(fragmentToCamera, lightReflect)), materialSpecularFactor) * 1.0;
+	float SpecularFactor = pow(max(0.0, dot(fragmentToCamera, lightReflect)), materialSpecularFactor);
 	vec3 color = SpecularFactor * lightCol.rgb;// * lightCol.a ;
 
 	return color;
@@ -109,7 +109,7 @@ void main()
 		        else if (abs(type - 3.0) < epsilon)
 		{
 		    lightDir = normalize(vertexPos - lights[i].position.xyz).xyz;
-		    attenuationFactor = 1.0;
+		    attenuationFactor = calcLightAttenuation(vertexPos, lights[i].position);//1.0;
             spotFactor = calcSpotLight(normal, fragmentToCamera, lights[i], vertexPos);
 		}
 		

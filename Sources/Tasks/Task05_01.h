@@ -39,6 +39,37 @@ public:
 						
 			scene.AddObject( pObject1 );
 		}
+
+		// Object #2 - Plane with sand texture (Point filter)
+		{
+			Object * pObject2 = new Object();
+
+			pObject2->m_pTransform	= new Transform( -0.27,0,0, 90,0,0, 0.2,10,1 );
+			pObject2->m_pMesh		= new MeshQuad();
+			pObject2->m_pMaterial	= new MaterialSand(TEXTURE_FILTER_MODE_BILINEAR);
+
+			scene.AddObject( pObject2 );
+		}
+        // Object #3 - Plane with sand texture (Point filter)
+        {
+            Object * pObject3 = new Object();
+
+            pObject3->m_pTransform	= new Transform( 0.135,0,0, 90,0,0, 0.2,10,1 );
+            pObject3->m_pMesh		= new MeshQuad();
+            pObject3->m_pMaterial	= new MaterialSand(TEXTURE_FILTER_MODE_TRILINEAR);
+
+            scene.AddObject( pObject3 );
+        }
+        // Object #4 - Plane with sand texture (Point filter)
+        {
+            Object * pObject4 = new Object();
+
+            pObject4->m_pTransform	= new Transform( 0.54,0,0, 90,0,0, 0.2,10,1 );
+            pObject4->m_pMesh		= new MeshQuad();
+            pObject4->m_pMaterial	= new MaterialSand(TEXTURE_FILTER_MODE_ANISOTROPIC);
+
+            scene.AddObject( pObject4 );
+        }
 	}
 
 	virtual void Update()

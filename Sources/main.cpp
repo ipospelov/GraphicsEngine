@@ -15,10 +15,7 @@ int main(int argc, char ** argv)
 		app.argc = argc;
 		app.argv = argv;
 	}
-
-    //Task * pTask = new Task01();
-    //Task * pTask = new Task04();
-    Task * pTask = new Task04();
+    Task * pTask = new Task05_01();
 	{
 		GraphicsEngine & engine = GraphicsEngine::Instance();
 
