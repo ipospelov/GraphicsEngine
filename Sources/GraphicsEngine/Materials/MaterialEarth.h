@@ -14,4 +14,5 @@ public:
     virtual void SetMaterial();
 private:
     Texture2D *	m_pTexture1;
+    Texture2D *	m_pTexture2;
 };

@@ -14,9 +14,10 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tasks/ObjectRotator.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tasks/Task01.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tasks/Task05_01.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Tasks/Task02.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tasks/Task05_03.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tasks/Task04.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Tasks/Task02.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Tasks/Task6.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tasks/Task05_02.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Meshes/MeshCylinder.cpp" isTestSource="false" />
