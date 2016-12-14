@@ -19,6 +19,6 @@ void main()
     vec4 texval1 = texture2D(texture1, vec2(uv1) *uv1Scale);
 
     //gl_FragColor = 0.33 * (texval1 + texval2 + texval3);
-    gl_FragColor = (0.5 * texval1 + 0.2 * texval2 + 0.3 * texval3);
+    gl_FragColor = texval1 * texval2 * texval3 * 2.0; //(0.5 * texval1 + 0.2 * texval2 + 0.3 * texval3);
     //gl_FragColor = (texval2);
 }

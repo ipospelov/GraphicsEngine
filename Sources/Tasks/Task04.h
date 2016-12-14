@@ -29,7 +29,7 @@ public:
 		// Камера
 		{
 			Object * pCameraObj = new Object();
-			pCameraObj->m_pTransform = new Transform( Vector3(0.0f, 0.0f,-7.0f), Vector3(0.0f, 0.0f, 0.0f));
+			pCameraObj->m_pTransform = new Transform( Vector3(0.0f, 0.0f,-10.0f), Vector3(0.0f, 0.0f, 0.0f));
 			Camera * pCamera = new Camera();
 			pCameraObj->AddComponent( pCamera );
 

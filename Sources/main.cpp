@@ -2,6 +2,7 @@
 #include <Tasks/Task05_02.h>
 #include <Tasks/Task05_03.h>
 #include <Tasks/Task6.h>
+#include <Tasks/Task7.h>
 #include "GraphicsEngine/Application.h"
 
 #include "Tasks/Task01.h"
@@ -22,7 +23,8 @@ int main(int argc, char ** argv)
     //Task * pTask = new Task05_01();
     //Task * pTask = new Task05_02();
     //Task * pTask = new Task05_03();
-    Task * pTask = new Task6();
+    Task * pTask = new Task07();
+    //Task * pTask = new Task04();
 	{
 		GraphicsEngine & engine = GraphicsEngine::Instance();
 

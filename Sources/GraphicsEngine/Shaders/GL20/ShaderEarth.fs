@@ -38,9 +38,10 @@ vec3 calcDiffuse(vec4 lightCol, vec3 lightDir, vec3 vertexNormal)
 
 void main(){
 
-     vec2 longitudeLatitude = vec2((atan(TexCoord0.z, TexCoord0.x) / 3.1415926  + 1.0) * 0.6 ,
-                                           -(asin(TexCoord0.y) / 3.1415926 + 0.45) * 1.6);
+     //vec2 longitudeLatitude = vec2((atan(TexCoord0.z, TexCoord0.x) / 3.1415926  + 1.0) * 0.6 ,
+           //                                -(asin(TexCoord0.y) / 3.1415926 + 0.45) * 1.6);
 
+    vec2 longitudeLatitude = uv1;
     vec3 vertexNormal = (vec4(localNormal, 0.0) * matWorldNormal).xyz;
     	vertexNormal = normalize(vertexNormal);
 

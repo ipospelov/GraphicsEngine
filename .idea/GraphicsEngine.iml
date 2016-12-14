@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/SDKs/OpenGL/include/FreeImage.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tasks/Task.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tasks/ObjectRotator.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Tasks/Task7.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tasks/Task01.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tasks/Task05_01.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tasks/Task02.h" isTestSource="false" />
@@ -36,28 +37,28 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Meshes/MeshQuad.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Object.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Transform.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Application.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Vector2.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Object.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Directory.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Rect.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialSphere.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialUnlit.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialEarth.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/Material.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialSpecular.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/Material.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialTask01.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialDiffuse.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/Material.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialUnlit.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialSand.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialTask01.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialRoad.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialSand.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialUnlit.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialSphere.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialDiffuse.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialRoad.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialCylinder.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialSpecular.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialEarth.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialRoad.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialDiffuse.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialSphere.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Materials/MaterialCylinder.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/PlatformApi/Windows/WinWindow.cpp" isTestSource="false" />
@@ -88,12 +89,14 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/GraphicsApi/GraphicsEngineFabricImpl.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/GraphicsApi/FixedFunctionPipelineImpl.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Math.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Application.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Time.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Camera.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/MathConstants.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/GraphicsEngine.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/File.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Scene.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Application.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Scene.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Directory.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/KeyCode.h" isTestSource="false" />
@@ -113,7 +116,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/GraphicsEngineFabric.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/MathUtils.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Camera.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Application.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Vector2.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Screen.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/SceneUtils.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GraphicsEngine/Vector3.cpp" isTestSource="false" />

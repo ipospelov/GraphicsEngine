@@ -14,9 +14,6 @@ varying vec2 uv3;
 
 void main()
 {
-	//gl_Position		= vec4(position, 1.0) * matrixWorldViewProjT;
-	//gl_FrontColor	= color * constColor;
-	//uv1				= texcoord0.xy;
 
     gl_Position = vec4(position, 1.0) * matrixWorldViewProjT;
 	gl_FrontColor	= color * constColor;

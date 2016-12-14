@@ -29,7 +29,7 @@ public:
         {
             Object * pCameraObj = new Object();
             Camera * pCamera = new Camera();
-            pCameraObj->m_pTransform = new Transform( Vector3(0.0f, 0.0f,-7.0f), Vector3(0.0f, 0.0f, 0.0f));
+            pCameraObj->m_pTransform = new Transform( Vector3(0.0f, 0.0f,-4.0f), Vector3(0.0f, 0.0f, 0.0f));
             pCameraObj->AddComponent((Component *) pCamera);
 
             scene.SetCamera( pCamera );
@@ -57,7 +57,7 @@ public:
             pLight->SetIntensity(0.3);
 
             Object * pLightObject = new Object();
-            pLightObject->m_pTransform	= new Transform(1,0,0, 0,-90,30, 1,1,1);
+            pLightObject->m_pTransform	= new Transform(1,0,0, 0,90,30, 1,1,1);
             pLightObject->AddComponent(pLight);
 
             scene.AddLight(pLight);

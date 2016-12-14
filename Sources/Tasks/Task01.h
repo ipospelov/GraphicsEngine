@@ -28,7 +28,7 @@ public:
 		// Камера
 		{
 			Object * pCameraObj = new Object();
-			pCameraObj->m_pTransform = new Transform( Vector3(0, 2, -10), Vector3(20.0f, 0.0f, 0.0f));
+			pCameraObj->m_pTransform = new Transform( Vector3(0, 0, -10), Vector3(0.0f, 0.0f, 0.0f));
 			Camera * pCamera = new Camera();
 			pCamera->SetFovY(90);
 			pCamera->SetNearPlane(0.01f);
@@ -42,7 +42,7 @@ public:
 		Object * pObj1 = NULL;
 		{
 			Object * pObject = new Object();
-			pObject->m_pMesh		= new MeshCube(3);
+			pObject->m_pMesh		= new MeshCube(1);
 			pObject->m_pTransform	= new Transform();
 			pObject->m_pMaterial	= new MaterialUnlit();
 			pObject->AddComponent( new ObjectRotator(0, 45, 0) );
@@ -51,7 +51,7 @@ public:
 
 			pObj1 = pObject;
 		}
-
+/*
 		// Объект - Куб #2
 		Object * pObj2 = NULL;
 		{
@@ -79,7 +79,7 @@ public:
 			pObject->m_pTransform->SetParent( pObj2->m_pTransform );
 			
 			scene.AddObject( pObject );
-		}
+		}*/
 	}
 
 	virtual void Update()
