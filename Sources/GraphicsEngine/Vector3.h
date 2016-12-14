@@ -63,6 +63,14 @@ public:
 
 		return *this;
 	}
+	const Vector3 & operator /= (const double k)
+	{
+		this->x /= k;
+		this->y /= k;
+		this->z /= k;
+
+		return *this;
+	}
 
 	Vector3 & Normalize()
 	{
@@ -111,9 +119,16 @@ public:
 
 		return result;
 	}
+
+	static Vector3 Zero()
+	{
+		return Vector3(0, 0, 0);
+	}
 };
 
 Vector3 operator + (const Vector3 & vec1, const Vector3 & vec2);
 Vector3 operator - (const Vector3 & vec1, const Vector3 & vec2);
 Vector3 operator * (const Vector3 & vec, const double k);
+Vector3 operator / (const Vector3 & vec, const double k);
 Vector3 operator * (const double k, const Vector3 & vec);
+Vector3 operator / (const double k, const Vector3 & vec);

@@ -34,3 +34,19 @@ Vector3 operator * (const double k, const Vector3 & vec)
 
 	return result;
 }
+
+Vector3 operator / (const Vector3 & vec, const double k)
+{
+	Vector3 result(vec);
+
+	result /= k;
+
+	return result;
+}
+
+Vector3 operator / (const double k, const Vector3 & vec)
+{
+	Vector3 result(vec / k);
+
+	return result;
+}

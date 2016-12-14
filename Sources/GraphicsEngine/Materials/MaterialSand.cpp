@@ -1,4 +1,5 @@
-﻿#include "MaterialSand.h"
+﻿#include <iostream>
+#include "MaterialSand.h"
 #include "GraphicsEngine/Transform.h"
 #include "GraphicsEngine/MathUtils.h"
 #include "GraphicsEngine/SceneUtils.h"
